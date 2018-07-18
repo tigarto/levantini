@@ -19,7 +19,7 @@ gcc -Wall voltear.c -o voltear.out
 int main(int argc, char *argv[])
 {
     //printf("-> P(*)\n");
-    printf("prompt >");    
+    printf("prompt > ./voltear.out casa carro beca");    
     int rc = fork();
     if (rc < 0) {
         // fork failed; exit
