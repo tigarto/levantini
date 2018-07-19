@@ -1,0 +1,18 @@
+http://edusagar.com/articles/view/25/IO-redirection-using-dup-system-call
+
+
+fd = creat('tempfile', flags);
+close(stdout);  //stdout => 1
+dup(fd);
+close(fd);
+
+
+https://cboard.cprogramming.com/linux-programming/101247-redirect-stdout-using-dup.html
+
+https://github.com/Lifka/Ejemplos-llamadas-al-sistema-en-Linux-C-/blob/master/Cauce%20sin%20nombre%20-Comunicar%20ordenes%2C%20redirigir%20entradas%20y%20salidas/dup2.c
+
+https://baulderasec.wordpress.com/programacion/programacion-con-linux/3-trabajando-con-los-archivos/acceso-de-bajo-nivel-a-archivos/dup-y-dup2/
+
+
+https://baulderasec.wordpress.com/programacion/programacion-con-linux/3-trabajando-con-los-archivos/acceso-de-bajo-nivel-a-archivos/dup-y-dup2/
+
