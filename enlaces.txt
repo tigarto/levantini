@@ -16,3 +16,18 @@ https://baulderasec.wordpress.com/programacion/programacion-con-linux/3-trabajan
 
 https://baulderasec.wordpress.com/programacion/programacion-con-linux/3-trabajando-con-los-archivos/acceso-de-bajo-nivel-a-archivos/dup-y-dup2/
 
+
+http://web.eecs.utk.edu/~plank/plank/classes/cs360/360/notes/Dup/lecture.html
+https://linuxmeerkat.wordpress.com/2011/12/02/file-descriptors-explained/
+https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/aixprggd/genprogc/fdescript.htm
+
+
+https://stackoverflow.com/questions/3965212/how-to-read-a-input-file-with-both-argv-and-redirection-from-a-input-file
+
+https://unix.stackexchange.com/questions/266664/using-command-line-arguement-with-redirecting
+https://cboard.cprogramming.com/cplusplus-programming/15970-command-line-arguments-file-redirection.html
+https://en.wikibooks.org/wiki/A_Little_C_Primer/C_Command_Line_Arguments
+
+http://blog.httrack.com/blog/2014/12/20/redirecting-stdio-is-hard/
+
+http://web.eecs.utk.edu/~plank/plank/classes/cs360/360/labs/lab8/index.html
