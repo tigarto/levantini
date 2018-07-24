@@ -6,6 +6,10 @@
 #include <sys/wait.h>
 
 /*
+http://www.sarathlakshman.com/2012/09/24/implementation-overview-of-redirection-and-pipe-operators-in-shell
+*/
+
+/*
 1. Compilar y enlazar primero el codigo de voltear.c:
 
 gcc -Wall solo.c -o solo
@@ -18,7 +22,19 @@ gcc -Wall consola3.c -o consola
 
 int main(int argc, char *argv[])
 {
-    //printf("-> P(*)\n");
+    // Padre: Consola
+
+    char *param[] = { 
+                          NULL 
+                        };
+        
+    char *param2[] = { 
+                         ">",
+                         "file.output",
+                         NULL 
+                     };
+        
+
     int fd;   // file descriptor 
     int rc = fork();
     if (rc < 0) {
@@ -26,15 +42,12 @@ int main(int argc, char *argv[])
         fprintf(stderr, "fork failed\n");
         exit(1);
     } else if (rc == 0) {  
-        printf("%s\n", argv[1]);      
-        fd = open("./test1", O_WRONLY | O_CREAT);        
-        /* stdout is now redirected */        
-        char *param[] = { argv[1],
-                          NULL };
-        printf("%s\n", param[0]);      
-        execv("./test1", param);        
+        // Hijo: Proceso que sera llamado (solo2)
+        // Parametros de parsing con salida en pantalla         
+        
+
+        execv("./test1", param2);        
     } else {
-        // printf("-> P(**)\n");
         int rc_wait = wait(NULL);
     }
     return 0;
